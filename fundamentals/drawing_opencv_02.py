@@ -32,7 +32,9 @@ def draw_circle(event,x,y,flags,param):
             cv2.circle(img,(x,y),1,(0,0,255),-1)
 
 # Load an image
-img = cv2.imread('Future-human-Face.png',1)
+#img = cv2.imread('Future-human-Face.png',1)
+cap = cv2.VideoCapture(0)
+_, img = cap.read()
 cv2.namedWindow('image')
 cv2.setMouseCallback('image', draw_circle)
 

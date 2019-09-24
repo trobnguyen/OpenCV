@@ -2,6 +2,12 @@
 
 import numpy as np 
 import cv2
+import os
+
+# find absolute file path
+#file_path = os.path.abspath("Future-human-Face.png")
+file_path = os.path.abspath("messi5.jpg")
+
 
 """
 cv2.IMREAD_COLOR = 1        : Loads a color image. Any transparency of image will be neglected. It is the default flag.
@@ -11,7 +17,7 @@ cv2.IMREAD_UNCHANGED = -1   : Loads image as such including alpha channel
 
 # Load an color image in grayscale
 #img = cv2.imread('Future-human-Face.png',0)
-img = cv2.imread('Future-human-Face.png',cv2.IMREAD_GRAYSCALE)      # read a specific image file in the working directory.
+img = cv2.imread('messi5.jpg',cv2.IMREAD_GRAYSCALE)      # read a specific image file in the working directory.
 
 cv2.namedWindow('image', cv2.WINDOW_AUTOSIZE)
 """
